@@ -1,0 +1,392 @@
+html {
+    height: 100%;
+}
+
+input {
+    float: right;
+    width: 225px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0.1px #ccc;
+}
+
+label {
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(225, 239, 244);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#main-holder {
+    width: 30%;
+    height: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    grid-template-rows: 4fr 1fr;
+    gap: 0;
+}
+
+.login-square {
+    width: 100%;
+    height: 70%;
+    padding-bottom: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    grid-template-rows: 40px 1fr 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.header { 
+    background-image: linear-gradient(#507793, #335690);
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.feed-header {
+    display: grid;
+    grid-template-columns: min-content auto min-content min-content;
+}
+
+.left-header {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 60%;
+    background-color: #294168;
+    border-left: 1px solid #19263c;
+    border-right: 1px solid #19263c;
+}
+
+.fa-house {
+    background-image: linear-gradient(rgb(210, 234, 244),  rgb(133, 167, 184));
+    background-clip: text;
+    color: transparent;
+}
+
+.right-header {
+    display: grid;
+    /* grid-template-columns: auto; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-basis: auto;
+    padding: 0 15px;
+    /* margin-right: 60%; */
+    border-left: 1px ridge rgba(255, 255, 255, 0.2);
+    border-right: 1px ridge rgba(255, 255, 255, 0.2);
+
+}
+
+.right-space-filler {
+    width: 200px;
+}
+
+.profile-photo {
+    width: 30px;
+    padding-right: 15px;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    font-family: snell roundhand, cursive;
+    text-shadow: 0 0 5px black;
+    font-weight: 200;
+    margin: 2px;   
+}
+
+.title-feed {
+    position: absolute;
+    margin-left: atuo;
+    left: 0;
+    right: 0;
+    top: 15px;
+    /* padding: 10px; */
+}
+
+.login-info {
+    width: 80%;
+    margin: auto;
+    padding: 5px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+#error-box {
+    background-color: rgba(253, 91, 91, 0.5);
+    border: 1px solid rgb(147, 0, 0);
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    text-align: center;
+    opacity: 0;
+}
+
+.error-message {
+    color: rgb(147, 0, 0);
+    padding: 0;
+    margin: 0;
+}
+
+.login-info a{
+    color: #507793;
+}
+
+#login-form-submit {
+    color: white;
+    background-image: linear-gradient(rgb(68, 155, 68), green);
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.bottom-row {
+    margin-top: 3px;
+}
+
+.app-info {
+    text-align: center;
+    width: 85%;
+}
+
+.app-button {
+    background-color: black;
+    border-radius: 5px;
+    width: 175px;
+    border: none
+}
+
+.app-store-info {
+    display: grid;
+    grid-template-areas: 
+        'apple start start start'
+        'apple end end end';
+    padding: 5px;
+}
+
+.fa-apple {
+    grid-area: apple;
+    font-size: 35px;
+    color: white;
+}
+
+.info p{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.start {
+    grid-area: start;
+    font-size: 10px;
+
+}
+
+.end {
+    grid-area: end;
+    font-size: 20px;
+}
+
+.app-store {
+    float: left;
+}
+
+.google-play {
+    float: right;
+}
+
+.google-play-info {
+    display: grid;
+    grid-template-areas: 
+        'space start start start'
+        'play end end end';
+    padding: 5px;
+}
+
+.empty-space {
+    grid-area: space;
+}
+
+.fa-google-play {
+    grid-area: play;
+    color: white;
+    font-size: 20px;
+}
+
+
+.poster-div {
+    min-height: 50px;
+    background-color: white;
+    width: 400px;
+    margin: 20px auto 0;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.poster-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 90px;
+    margin: 0 10px;
+}
+
+.poster-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.poster {
+    margin: 0px 5px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed-img {
+    width: 400px;
+    background-color: white;
+    border: 2px solid grey;
+    border-bottom: none;
+
+}
+
+.main-feed {
+    background-color: rgba(173, 185, 189, 0.5);
+    width: 50%;
+    height: 100%;
+}
+
+.info-div {
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    align-items: end;
+    border: 2px solid grey;
+    margin-bottom: 20px;
+}
+
+.like-div {
+    background-color: rgb(228, 228, 228);
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fa-heart {
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(rgba(115, 120, 122),  rgba(151, 153, 154));
+    background-clip: text;
+    color: transparent;
+    padding: 5px;
+    margin: auto;
+    border-right: 1px solid grey;
+    margin: none !important;
+
+}
+
+.likes {
+    min-height: 20px;
+    flex-grow: 2;
+    padding: 2px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.comment-box {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.comment-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 90px;
+    margin-right: 10px;
+}
+
+.comment-box span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid grey;
+}
+
+.comment-input {
+    text-align: left;
+    flex-grow: 2;
+    border: none;
+    box-shadow: none !important;
+    padding: 5px;
+    height: 30px;
+}
+
+.comment-input,
+input::placeholder {
+    font-size: 12px;
+}
+
+.comment-input:focus {
+    outline: none;
+}
+
+.post {
+    color: blue;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    width: 10%;
+    box-shadow: none !important;
+}
